@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Location Based Quiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="radioAnswer1">Answer1</string>
+    <string name="radioAnswer2">Answer2</string>
+    <string name="radioAnswer3">Answer3</string>
+    <string name="radioAnswer4">Answer4</string>
+    <string name="tvQuestion">Question</string>
+    <string name="tvID">Question</string>
+    <string name="button_close">Close</string>
+    <string name="button_exit">Exit Quiz</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="buttonBegin">Begin</string>
+    <string name="debug"></string>
+    <string name="tvScore">0</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.ac.ucl.cege.cegeg077.uceslra.locationbasedquiz.QuestionActivity"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id ="@+id/mainwrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:layout_height="wrap_content"
+            android:text="Please complete the following details:"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+
+        </TextView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            >
+            <TextView android:layout_width="175px" android:text="Username:" android:layout_height="match_parent" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1"
+                android:gravity="left|center_vertical"></TextView>
+            <EditText android:tag="username" android:name="username" android:layout_width="wrap_content" android:id="@+id/username" android:layout_height="match_parent" android:layout_weight="1"
+                android:inputType="text">
+                <requestFocus></requestFocus>
+            </EditText>
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvUsername" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            >
+            <TextView android:layout_width="175px" android:text="Email" android:layout_height="match_parent" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2"
+                android:gravity="left|center_vertical"></TextView>
+            <EditText android:tag="email" android:name="email" android:layout_width="wrap_content" android:id="@+id/email" android:layout_height="match_parent" android:layout_weight="1"
+                android:inputType="text">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvEmail" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            >
+
+            <Button
+                android:id="@+id/buttonBegin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Begin"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/webResponse"
+            android:layout_width="fill_parent"
+            android:text="@string/debug"
+            android:layout_height="100dp"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</RelativeLayout>
